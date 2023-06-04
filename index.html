@@ -20,7 +20,7 @@
     
     <br>
     
-    <textarea id="copyText" >Click here to copy and type anything</textarea>
+    <textarea id="copyText" ></textarea>
     <button class="copy-button" onclick="copyText()">Copy</button>
     <button class="reset-button" onclick="resetText()">Reset</button>
     
@@ -30,19 +30,19 @@
       function handleClick(buttonName) {
         const copyText = document.getElementById("copyText");
         
-        // Call the Python function based on the button clicked
+        // Append the message to the existing value with a new line
         if (buttonName === 'verified_user') {
-          copyText.value = "Verified User message";
+          copyText.value += "Verified User message\n";
         } else if (buttonName === 'rebooted_system') {
-          copyText.value = "Rebooted System message";
+          copyText.value += "Rebooted System message\n";
         } else if (buttonName === 'cleared_cache_cookies') {
-          copyText.value = "Cleared Cache Cookies message";
+          copyText.value += "Cleared Cache Cookies message\n";
         } else if (buttonName === 'performed_browser_reset') {
-          copyText.value = "Performed a Browser Reset message";
+          copyText.value += "Performed a Browser Reset message\n";
         } else if (buttonName === 'step_5') {
-          copyText.value = "Still waiting for Sameer";
+          copyText.value += "Still waiting for Sameer\n";
         } else if (buttonName === 'step_6') {
-          copyText.value = "Still waiting for Sameer";
+          copyText.value += "Still waiting for Sameer\n";
         }
       }
       
