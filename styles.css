@@ -2,23 +2,45 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #E6FFFD;
+    
+  }
+  .logo-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+  
+  h1 {
+    /*text-align: center; /* Center align the heading */
+    margin-top: 60px; /* Add margin from the top */
+    margin-left: 30%;
   }
   
   .container {
-    width: 100%;
-    height: 100vh;
-    max-width: 1500px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
+    /*margin: 100px auto;*/
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #E6FFFD;
+  
   }
+    
+ 
   
   .button {
     display: inline-block;
-    width: 500px;
-    height: 200px;
+    width: 170px;
+    height: 100px;
     padding: 10px 20px;
     margin: 10px;
     background-color: #3399ff;
@@ -27,14 +49,16 @@ body {
     border-radius: 4px;
     cursor: pointer;
     text-decoration: none;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
   }
   
   
   textarea {
     display: inline-block;
-    margin-right: 10px;
-    width: 50%;
-    height: 300px;
+    margin-left: 10%;
+    width: 52%;
+    height: 100px;
     padding: 10px;
     background-color: #ffffff;
     color: #333333;
@@ -48,9 +72,9 @@ body {
     position: absolute;
     margin-left: 10px;
     padding: 10px;
-    width: 20%;
-    height: 100px;
-    background-color: #3399ff;
+    width: 10%;
+    height: 50px;
+    background-color: #025464;
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -59,12 +83,12 @@ body {
   }
   .reset-button {
     position: absolute;
-    top: 170%;
+    top: 90%;
     margin-left: 10px;
     padding: 10px;
-    width: 20%;
-    height: 100px;
-    background-color: #3399ff;
+    width: 10%;
+    height: 50px;
+    background-color: #CD1818;
     color: #ffffff;
     border: none;
     border-radius: 4px;
