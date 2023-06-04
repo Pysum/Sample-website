@@ -5,8 +5,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="logo-container">
+    <img src="logo.png" alt="Logo" class="logo">
+  </div>
+  
+  <h1>Work Notes</h1>
   <div class="container">
-    <h1>Work Notes</h1>
+    
     
     <button class="button" onclick="handleClick('verified_user')">Verified User</button>
     <button class="button" onclick="handleClick('rebooted_system')">Rebooted System</button>
@@ -14,51 +19,13 @@
     <button class="button" onclick="handleClick('performed_browser_reset')">Performed a Browser Reset</button>
     
     <br>
-    
     <button class="button" onclick="handleClick('step_5')">Step 5</button>
     <button class="button" onclick="handleClick('step_6')">Step 6</button>
-    
-    <br>
-    
-    <textarea id="copyText" ></textarea>
-    <button class="copy-button" onclick="copyText()">Copy</button>
-    <button class="reset-button" onclick="resetText()">Reset</button>
-    
-    <br>
-    
-    <script>
-      function handleClick(buttonName) {
-        const copyText = document.getElementById("copyText");
-        
-        // Append the message to the existing value with a new line
-        if (buttonName === 'verified_user') {
-          copyText.value += "Verified User message\n";
-        } else if (buttonName === 'rebooted_system') {
-          copyText.value += "Rebooted System message\n";
-        } else if (buttonName === 'cleared_cache_cookies') {
-          copyText.value += "Cleared Cache Cookies message\n";
-        } else if (buttonName === 'performed_browser_reset') {
-          copyText.value += "Performed a Browser Reset message\n";
-        } else if (buttonName === 'step_5') {
-          copyText.value += "Still waiting for Sameer\n";
-        } else if (buttonName === 'step_6') {
-          copyText.value += "Still waiting for Sameer\n";
-        }
-      }
-      
-      function copyText() {
-        const copyText = document.getElementById("copyText");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999);
-        document.execCommand("copy");
-        alert("Text copied!");
-      }
-      
-      function resetText() {
-        const copyText = document.getElementById("copyText");
-        copyText.value = "";
-      }
-    </script>
+  
   </div>
+  <textarea id="copyText" ></textarea>
+  <button class="copy-button" onclick="copyText()">Copy</button>
+  <button class="reset-button" onclick="resetText()">Reset</button>
+  <script src="script.js"></script>
 </body>
 </html>
